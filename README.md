@@ -106,7 +106,7 @@ pip install tensorboard===2.12.3
 ### 5. Run the code cells or execute the script to perform data preprocessing, model training, and evaluation.
 ### 6. Use Tensorboard to visualize the model graph and training progress by running the following command in the project directory:
 ```shell
-tensorboard --logdir tensorboard_logs/capstone4
+tensorboard --logdir tensorboard-log/capstone-4
 ```
 Access Tensorboard in your web browser using the provided URL.
 
