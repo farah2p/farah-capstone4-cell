@@ -1,5 +1,5 @@
 # Cell Nuclei Semantic Segmentation
-This project aims to develop an algorithm for automatic detection and semantic segmentation of cell nuclei in images. The algorithm will assist in expediting research on various diseases, including cancer, heart disease and rare disorders, ultimately accelerating the development of cures and benefiting patients with different health conditions.
+This project aims to develop an algorithm for semantic segmentation that can automatically detect nuclei in images. The algorithm has the potential to expedite research in various diseases, including cancer, heart disease, and rare disorders, by enabling researchers to analyze the DNA contained within cell nuclei. This genetic information plays a crucial role in determining the function of each cell and understanding the underlying biological processes.
 
 ## Dataset
 The dataset used for this project is sourced from the Data Science Bowl 2018 competition on Kaggle. You can find the dataset here https://www.kaggle.com/competitions/data-science-bowl-2018/overview. Please download the file and extract it to the appropriate directory.
@@ -104,7 +104,61 @@ Access Tensorboard in your web browser using the provided URL.
 - TensorFlow library
 
 ## Results
-After developing the U-Net-based model for Cell Nuclei Segmentation, the following results were achieved:
+After training the semantic segmentation model using a deep learning framework, it was trained for 10 epochs, where each epoch consisted of several steps. Throughout the training process, the loss and accuracy metrics were monitored to assess the model's performance. By employing a U-Net-based architecture for Cell Nuclei Segmentation, the following noteworthy results were obtained:
+
+Here is a summary of the loss and accuracy metrics for each epoch:
+
+- Epoch 1/10: Loss: 0.0982, Accuracy: 0.9597
+- Epoch 2/10: Loss: 0.0920, Accuracy: 0.9624
+- Epoch 3/10: Loss: 0.0901, Accuracy: 0.9632
+- Epoch 4/10: Loss: 0.0859, Accuracy: 0.9650
+- Epoch 5/10: Loss: 0.0828, Accuracy: 0.9661
+- Epoch 6/10: Loss: 0.0816, Accuracy: 0.9667
+- Epoch 7/10: Loss: 0.0798, Accuracy: 0.9673
+- Epoch 8/10: Loss: 0.0782, Accuracy: 0.9679
+- Epoch 9/10: Loss: 0.0756, Accuracy: 0.9690
+- Epoch 10/10: Loss: 0.0748, Accuracy: 0.9694
+
+### Sample Predictions
+After each epoch, sample predictions were generated to visually assess the model's performance. These predictions provide an understanding of how well the model is able to segment and detect cell nuclei in the given images. Please refer to the project report for the visual representations of the sample predictions generated after each epoch.
+
+### Model Evaluation on Test Dataset
+To assess the performance of the developed semantic segmentation model on unseen data, it was evaluated on a separate test dataset. The evaluation provides valuable insights into how well the model generalizes to new images and its overall effectiveness in detecting and segmenting cell nuclei.
+
+The model was evaluated using the test dataset, which consisted of a set of images with ground truth annotations. Here are the evaluation results:
+- Loss: 0.0899
+- Accuracy: 96.32%
+
+The computed metrics provide a quantitative measure of the model's performance. The lower the loss value, the better the model's predictions align with the ground truth annotations. Additionally, the accuracy metric indicates the percentage of correctly classified pixels in the test dataset.
+
+These results demonstrate that the developed semantic segmentation model achieves a high level of accuracy, accurately identifying and segmenting cell nuclei in the test images.
+
+### Conclusion
+The developed semantic segmentation model shows promising results in detecting and segmenting cell nuclei in images. With its high accuracy and progressively decreasing loss values over the epochs, the model has the potential to streamline research processes in various diseases. By automating the identification of cell nuclei, researchers can expedite their analysis of cellular responses to different treatments, leading to faster insights into the underlying biological processes and ultimately expediting the development of cures and new drugs for the benefit of patients worldwide.
+
+The robust performance of the model on the test dataset reinforces its potential as a valuable tool in expediting research on various diseases, including cancer, heart disease, and rare disorders. By automating the detection of cell nuclei, researchers can analyze the DNA contained within these nuclei, gaining valuable insights into cellular responses to different treatments and facilitating the development of new drugs and cures.
+
+Overall, the evaluation results suggest that the developed model holds promise for advancing research in the biomedical field and has the potential to significantly impact the speed at which cures are developed, benefitting individuals suffering from a wide range of health conditions.
+
+### Below are some sample visualizations generated by the project:
+
+- Tensorboard Epoch Accuracy:
+
+![Tensorboard Accuracy](farah-tensorboard-epoch-accuracy.png)
+
+- Tensorboard Epoch Loss:
+
+![Tensorboard Accuracy](farah-tensorboard-epoch-loss.png)
+
+- Model Architecture:
+
+![Model Summary](farah-model-summary.png)
+
+- To showcase the model's performance on the test dataset, the `show_predictions` function was used to visualize the segmentation results of three sample images. And here is the output:
+
+![Show Predictions](farah-show-predictions.png)
+
+The output displays the original images alongside their corresponding segmented cell nuclei. This demonstration provides a visual representation of the model's accuracy and its ability to effectively detect and segment cell nuclei in real-world images.
 
 ## Credits
 The dataset used in this project is sourced from Kaggle:
