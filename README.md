@@ -73,7 +73,7 @@ After training the model, it can be evaluated using the testing dataset. The eva
 ## Installation
 ### 1. Clone the repository to your local machine using the following command:
 ```shell
-git clone https://github.com/farah2p/farah-capstone2-ecommerce-text.git
+git clone https://github.com/farah2p/farah-capstone4-cell.git
 ```
 ### 2. Before running the code, ensure that you have the following dependencies installed:
 - TensorFlow
