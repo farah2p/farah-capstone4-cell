@@ -15,16 +15,6 @@ By organizing the project files in this structure, it allows for easy access and
 
 This file structure ensures that all the necessary components of the model are stored in an organized manner, facilitating seamless integration and future use of the trained model.
 
-## Usage
-### 1. Navigate to the project directory:
-```shell
-cd your-repository
-```
-NOTES: make sure you replace 'your-repositary' with the correct name
-### 2. Run the main script:
-```shell
-python farahAI03_capstone4_cell.ipynb
-```
 ## Data Preparation
 The dataset is expected to be located in the following directory structure:
 
@@ -80,6 +70,17 @@ After training the model, it can be evaluated using the testing dataset. The eva
 - Preprocess the input and mask images from the testing dataset.
 - Run the evaluation script.
 - Compute the metrics (e.g., accuracy, loss) to assess the model's performance.
+
+## Usage
+### 1. Navigate to the project directory:
+```shell
+cd your-repository
+```
+NOTES: make sure you replace 'your-repositary' with the correct name
+### 2. Run the main script:
+```shell
+python farahAI03_capstone4_cell.ipynb
+```
 
 ## Installation
 ### 1. Clone the repository to your local machine using the following command:
