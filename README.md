@@ -4,6 +4,17 @@ This project aims to develop an algorithm for semantic segmentation that can aut
 ## Dataset
 The dataset used for this project is sourced from the Data Science Bowl 2018 competition on Kaggle. You can find the dataset here https://www.kaggle.com/competitions/data-science-bowl-2018/overview. Please download the file and extract it to the appropriate directory.
 
+## File Structure
+### farahAI03-capstone4-cell.ipynb: The main Python script containing the code for the project.
+### saved_models: A directory to store the saved model and related files.
+- model.h5: The trained model saved in the .h5 format.
+- model_architecture.pkl: The serialized model architecture in a binary file, saved using pickle.
+- model_weights.pkl: The saved model weights.
+
+By organizing the project files in this structure, it allows for easy access and management of the trained model and associated files. The model.h5 file contains the trained model itself, while the model_architecture.pkl file stores the serialized model architecture, enabling easy reusability and deployment. The model_weights.pkl file contains the saved weights of the model.
+
+This file structure ensures that all the necessary components of the model are stored in an organized manner, facilitating seamless integration and future use of the trained model.
+
 ## Usage
 ### 1. Navigate to the project directory:
 ```shell
@@ -97,7 +108,16 @@ pip install tensorboard===2.12.3
 tensorboard --logdir tensorboard_logs/capstone4
 ```
 Access Tensorboard in your web browser using the provided URL.
-### 7. The trained model will be saved in the "saved_models" folder in .h5 format as model.h5
+
+### 7. Saving the Trained Model
+To ensure the trained model can be easily reused and integrated into other workflows or systems, the following steps were taken to save the model:
+- A folder was created to store the saved model files, and if the folder already exists, it was not created again.
+- The trained model was saved in the .h5 format using the model.save() function. The path to the saved model was defined as model_path.
+- The model architecture was serialized as a JSON string using the model.to_json() function. It was then saved as a binary file using the pickle.dump() function. The path - to the saved architecture file was defined as architecture_path.
+- The model weights were saved separately using the model.save_weights() function. The path to the saved weights was defined as weights_path.
+- By saving the model, its architecture, and the weights separately, the saved model files can be easily loaded and used in other applications or frameworks for further analysis or deployment.
+
+This approach ensures the model's reusability and provides flexibility for future retraining or integration into different systems.
 
 ## Project Requirements
 - Python
