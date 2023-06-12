@@ -174,6 +174,10 @@ Overall, the evaluation results suggest that the developed model holds promise f
 
 ![Model Summary](farah-model-summary.png)
 
+- Model Evaluation:
+
+![Model Evaluation](farah-model-evaluation.png)
+
 - To showcase the model's performance on the test dataset, the `show_predictions` function was used to visualize the segmentation results of three sample images. And here is the output:
 
 ![Show Predictions](farah-show-predictions.png)
