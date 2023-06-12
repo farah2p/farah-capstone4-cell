@@ -12,7 +12,7 @@ cd your-repository
 NOTES: make sure you replace 'your-repositary' with the correct name
 ### 2. Run the main script:
 ```shell
-python farahAI03_capstone4_cell.py
+python farahAI03_capstone4_cell.ipynb
 ```
 ## Data Preparation
 The dataset is expected to be located in the following directory structure:
